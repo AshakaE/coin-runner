@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import * as board from '../js/leaderboard';
 
 class scoreBoard extends Phaser.Scene {
   constructor() {
@@ -55,6 +56,12 @@ class scoreBoard extends Phaser.Scene {
         fill: '#493415',
       })
       .setOrigin(0.1);
+
+    this.score = board.getScore().catch(() => {
+      this.errorMessage();
+    });
+
+
     this.createScore(this.score);
   }
 

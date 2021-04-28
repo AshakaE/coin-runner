@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import * as board from '../js/leaderboard';
 
 export default class gameOverScene extends Phaser.Scene {
   constructor() {
@@ -113,6 +114,7 @@ export default class gameOverScene extends Phaser.Scene {
           //  Remove HTML elements
           this.setVisible(false);
           //  Set Score
+          board.setScore(inputText.value, coinsPoints);
           window.game.scene.start('leaderboard');
         } else {
           //  Flash the prompt
