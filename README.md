@@ -8,8 +8,9 @@
 ## Built With
 
 - JavaScript
-- Phaser
+- Phaser 3
 - CSS3
+- Webpack 5
 
 ## Live Demo
 
