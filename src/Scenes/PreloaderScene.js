@@ -1,11 +1,4 @@
 import Phaser from 'phaser';
-import b2 from '../assets/ui/blue_button02.png';
-import b3 from '../assets/ui/blue_button03.png';
-import logoImg from '../assets/logo.png';
-import boxImg from '../assets/ui/grey_box.png';
-import checkBox from '../assets/ui/blue_boxCheckmark.png';
-import themeMusic from '../assets/TownTheme.mp3';
-import bg from '../assets/bg.png';
 
 export default class PreloaderScene extends Phaser.Scene {
   constructor() {
@@ -71,7 +64,7 @@ export default class PreloaderScene extends Phaser.Scene {
 
     // update progress bar
     this.load.on('progress', (value) => {
-      percentText.setText(`${parseFloat(value * 100)}%`);
+      percentText.setText(`${parseFloat(value * 100).toFixed()}%`);
       progressBar.clear();
       progressBar.fillStyle(0xffffff, 1);
       progressBar.fillRect(520, 530, 300 * value, 30);
@@ -98,13 +91,13 @@ export default class PreloaderScene extends Phaser.Scene {
     this.timedEvent = this.time.delayedCall(3000, this.ready, [], this);
 
     // load assets needed in our game
-    this.load.image('blueButton1', b2);
-    this.load.image('blueButton2', b3);
-    this.load.image('phaserLogo', logoImg);
-    this.load.image('box', boxImg);
-    this.load.image('checkedBox', checkBox);
-    this.load.audio('bgMusic', themeMusic);
+    this.load.image('blueButton1', './src/assets/ui/blue_button02.png');
+    this.load.image('blueButton2', './src/assets/ui/blue_button03.png');
+    this.load.image('phaserLogo', './src/assets/logo.png');
+    this.load.image('box', './src/assets/ui/grey_box.png');
+    this.load.image('checkedBox', './src/assets/ui/blue_boxCheckmark.png');
+    this.load.audio('bgMusic', './src/assets/TownTheme.mp3');
 
-    this.load.image('background', bg);
+    this.load.image('background', './src/assets/bg.png');
   }
 }
