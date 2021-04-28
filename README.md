@@ -1,11 +1,14 @@
-# Title TBA
+# Coin runner
 
-> Description TBA
+> An endless running game where the player jumps from platform to platform avoiding falls and flames, the player collects coin on random platforms.
 
+> Press the 'W' key twice to double jump
+
+![](./src/assets/gameShot.jpeg)
 ## Built With
 
 - JavaScript
-- HTML5
+- Phaser
 - CSS3
 
 ## Live Demo
@@ -14,29 +17,20 @@ TBA
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+- `git clone git@github.com:AshakaE/coin-runner.git`
+- `cd coin-runner`
+- `npm install`
+- `npm run start`
 
 ### Prerequisites
 
 Node.js
 
-### Setup
-
-- Clone the repository in the folder of your choice:<br> 
-
-
-### Usage
-
-- Start server with:
-
-
 ### Run tests
 
+- `npm test`
 
-
-### Deployment
-
-TBA
+## Author
 
 👤 **Ashaka Egerega**
 
@@ -47,7 +41,7 @@ TBA
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/AshakaE/coin-runner/issues).
 
 ## Show your support
 
@@ -55,7 +49,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+- Microverse
+- Game assets gotten from [OpenGameArt](https://opengameart.org/)
 
 ## 📝 License
 
@@ -65,5 +60,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS, OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
