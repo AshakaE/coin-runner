@@ -1,12 +1,12 @@
-const {merge} = require("webpack-merge");
-const base = require("./base");
-const TerserPlugin = require("terser-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
+const { merge } = require('webpack-merge');
+const TerserPlugin = require('terser-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const base = require('./base');
 
 module.exports = merge(base, {
-  mode: "production",
+  mode: 'production',
   output: {
-    filename: "bundle.min.js",
+    filename: 'bundle.min.js',
   },
   devtool: false,
   performance: {
@@ -28,8 +28,8 @@ module.exports = merge(base, {
     new CopyPlugin({
       patterns: [
         {
-          from: "./src/assets",
-          to: "src/assets",
+          from: './src/assets',
+          to: 'src/assets',
         },
         // Configure the path from where webpack will copy my assets from
         // and the path where it will put it when the build is done
