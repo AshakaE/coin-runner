@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-![Coin runner](https://coin-runner.netlify.app/)
+[Coin runner](https://coin-runner.netlify.app/)
 
 ## Getting Started
 
