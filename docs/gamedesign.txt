@@ -1,0 +1,21 @@
+Coin runner
+
+An endless runner game, where a player hops from platform to platform collecting coins for as long as:
+- The player does not fall off the platform.
+- The player does not enter the flames.
+
+--- Movement
+The player can only jump two times.
+Press the 'W' key twice to double jump.
+
+-- Scores
+The player can increase his score by collecting coins.
+
+--- Game Over
+The total number of coins collected.
+An Input field to collect player names and save the player score.
+
+-- Future additions
+
+In the future, I will try to add more coins with varying values.
+I will also try to add game speed to increase difficulty.

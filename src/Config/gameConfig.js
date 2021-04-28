@@ -31,7 +31,7 @@ const gameOptions = {
   playerStartPosition: 200,
 
   // consecutive jumps allowed
-  jumps: 3,
+  jumps: 2,
 
   // % of probability a coin appears on the platform
   coinPercent: 25,
