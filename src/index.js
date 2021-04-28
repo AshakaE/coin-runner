@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 
+import './assets/style.css';
 import config from './Config/config';
 import Model from './Model';
 import BootScene from './Scenes/BootScene';

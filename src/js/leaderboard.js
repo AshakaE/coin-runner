@@ -1,6 +1,6 @@
 const getScore = async () => {
   const response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/LhCPEV1SxgnitVrbFO32/scores',
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/IRN2MH4ruvnSCicBEebI/scores',
     {
       mode: 'cors',
       headers: {
@@ -20,7 +20,7 @@ const setScore = async (user, score) => {
     score,
   };
   await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/LhCPEV1SxgnitVrbFO32/scores',
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/IRN2MH4ruvnSCicBEebI/scores',
     {
       mode: 'cors',
       headers: {
