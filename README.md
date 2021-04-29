@@ -4,6 +4,7 @@
 
 > Press the 'W' key twice to double jump
 
+For more information check the [game design](./docs/gamedesign.txt) file.
 ![](./src/assets/gameShot.jpeg)
 ## Built With
 
