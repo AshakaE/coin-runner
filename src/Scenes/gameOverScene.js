@@ -90,7 +90,7 @@ export default class gameOverScene extends Phaser.Scene {
         });
       });
     const scoreBoard = this.add
-      .text(500, 250, 'Scoreboard', {
+      .text(500, 245, 'Scoreboard', {
         fontFamily: 'Arial',
         stroke: '#fff',
         strokeThickness: 2,
@@ -100,6 +100,18 @@ export default class gameOverScene extends Phaser.Scene {
       .setOrigin(0.2);
     scoreBoard.setInteractive().on('pointerdown', () => {
       this.scene.start('ScoreBoard');
+    });
+    const menu = this.add
+      .text(473, 295, 'Menu', {
+        fontFamily: 'Arial',
+        stroke: '#fff',
+        strokeThickness: 2,
+        fontSize: '35px',
+        fill: '#00276e',
+      })
+      .setOrigin(0.1);
+    menu.setInteractive().on('pointerdown', () => {
+      this.scene.start('Title');
     });
 
     saveScore.on('click', function fn(event) {

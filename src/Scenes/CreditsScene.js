@@ -35,8 +35,7 @@ export default class CreditsScene extends Phaser.Scene {
       duration: 3000,
       delay: 1000,
       onComplete() {
-        /* eslint-disable no-unused-expressions */
-        this.destroy;
+        this.destroy = true;
       },
     });
 
@@ -47,10 +46,9 @@ export default class CreditsScene extends Phaser.Scene {
       duration: 8000,
       delay: 1000,
       onComplete: function fn() {
-        this.madeByTween.destroy;
+        this.madeByTween.destroy = true;
         this.scene.start('Title');
       }.bind(this),
     });
-    /* eslint-enable no-unused-expressions */
   }
 }
