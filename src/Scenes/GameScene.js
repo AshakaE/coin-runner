@@ -371,8 +371,6 @@ export default class GameScene extends Phaser.Scene {
   update() {
     // game over
     if (this.player.y > config.height) {
-      // this.coinsPoints = null;
-      // this.scene.start("GameOver");
       this.gameOver();
     }
 
