@@ -21,9 +21,9 @@ class scoreBoard extends Phaser.Scene {
 
   create() {
     const start = this.add
-      .text(580, 120, 'Play Again', {
+      .text(520, 120, 'Play Again', {
         fontFamily: 'Arial',
-        fontSize: '44px',
+        fontSize: '35px',
         stroke: '#02ca1d',
         fill: '#fff',
         strokeThickness: 2,
@@ -33,6 +33,20 @@ class scoreBoard extends Phaser.Scene {
     start.setInteractive();
     start.on('pointerdown', () => {
       this.scene.start('GameScene');
+    });
+    const menu = this.add
+      .text(700, 120, 'Menu', {
+        fontFamily: 'Arial',
+        fontSize: '35px',
+        stroke: '#004bd6',
+        fill: '#fff',
+        strokeThickness: 2,
+      })
+      .setOrigin(0.1);
+
+    menu.setInteractive();
+    menu.on('pointerdown', () => {
+      this.scene.start('Title');
     });
 
     this.add
