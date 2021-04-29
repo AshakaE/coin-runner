@@ -1,10 +1,11 @@
-/* eslint-disable no-underscore-dangle */
+/* eslint no-underscore-dangle: ["error", { "allowAfterThisConstructor": true }] */
 export default class Model {
   constructor() {
     this._soundOn = true;
     this._musicOn = true;
     this._bgMusicPlaying = false;
   }
+  /* eslint no-underscore-dangle: ["error", { "allowAfterThis": true }] */
 
   set musicOn(value) {
     this._musicOn = value;
